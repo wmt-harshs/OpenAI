@@ -18,11 +18,6 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [dataToShow, setDataToShow] = useState("");
 
-  useEffect(() => {
-    if (!Cookies.get("email") && !Cookies.get("password")) {
-      router.push("/");
-    }
-  }, []);
   const configuration = new Configuration({
     apiKey: "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",
   });
